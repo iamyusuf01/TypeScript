@@ -22,5 +22,5 @@ function createChai(order: {
     sugar:number;
     size: 'small' | 'large'
 }): number {
-    return 4
+    return 4 
 }

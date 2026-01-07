@@ -1,0 +1,72 @@
+const chaiFlavours: string[] = ["Masala", "Adrak"]
+const chaiPrice: number[] = [12, 15]
+
+const rating: Array<number> = [4.5, 5.0]
+
+type Chai = {
+    name: string;
+    price: number
+}
+
+const menu: Chai[] = [
+    { name: "Masala", price: 15 },
+    { name: "Adrak", price: 15 },
+]
+
+const cities: readonly string[] = ["Delhi", "jaipur"]
+
+const table: number[][] = [
+    [1, 2, 3],
+    [4, 5, 6],
+]
+
+let chaiTuple: [string, number];
+// chaiTuple = ["Masala", 20]  
+
+let userInfo: [string, number, boolean?]
+
+userInfo = ["hitesh", 100]
+userInfo = ["hitesh", 100, true]
+
+
+const location: readonly [number, number] = [28.66, 32.22]
+
+const chaiItem: [name: string, price: number] = ["Masala", 20]
+
+enum CupSize {
+    SMALL,
+    MEDIUM,
+    LARGE
+}
+
+const size = CupSize.LARGE
+
+enum Status {
+    PENDING = 100,
+    SERVED,
+    CANCELLED
+}
+
+enum ChaiType {
+    MASALA = 'masala',
+    GINGER = 'ginger'
+}
+
+function makeChai(type: ChaiType){
+    console.log(`Making: ${type}`);
+}
+
+makeChai(ChaiType.GINGER)
+
+enum RandomEnum {
+    ID = 1,
+    NAME = 'chai'
+}
+
+const enum Sugars {
+    LOW = 1,
+    MEDIUM = 2,
+    HIGH = 3
+}
+
+const s = Sugars.HIGH
